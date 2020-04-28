@@ -41,7 +41,7 @@
     </header>
 
     <section id="about">
-      <h1 class="sectionTitle">ABOUT US</h1>
+      <h1 class="sectionTitle bottomLine">ABOUT US</h1>
 
       <div class="container">
         <div class="about-a">
@@ -59,9 +59,6 @@
             <br />
             <br />
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
-            commodi facilis natus aspernatur vel nulla fugiat? Nemo ratione
-            vitae, nulla, molestias autem modi omnis dolorem dignissimos quae
-            repellat rerum voluptatum!
           </p>
           <img class="leafPic" src="/img/leaf.jpg" alt="" />
         </div>
@@ -74,8 +71,24 @@
 
     <section id="products">
       <div>
-        <h1 class="sectionTitle">PRODUCTS</h1>
+        <h1 class="sectionTitle bottomLine">PRODUCTS</h1>
         <img src="/laraimg/mushrmnobask.png" alt="" id="shroom" />
+        <div class="subscribeBox">
+          <h4>Help your garden to thrive!</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+            quod ratione quos aspernatur. Dolore, numquam alias! Quo, ipsam
+            officia. Eaque.
+          </p>
+
+          <p>Subscribe to our newsletter today!</p>
+
+          <div class="formControl">
+            <input type="text" name="name" placeholder="Enter Your Name" />
+            <input type="email" name="email" placeholder="Enter Your Email" />
+            <a href="" class="btn subscribeBtn">Subscribe</a>
+          </div>
+        </div>
       </div>
 
       <div class="products-a">
@@ -83,6 +96,7 @@
           <div>
             <h4>Garden Beauties</h4>
             <h5>R55</h5>
+            <a href="" class="btn">Buy Now</a>
             <img class="smallPic" src="/img/flow4.jpg" alt="" />
 
             <p></p>
@@ -90,6 +104,7 @@
           <div>
             <h4>Summer Sockers</h4>
             <h5>R55</h5>
+            <a href="" class="btn">Buy Now</a>
             <img class="smallPic" src="/img/flow5.jpg" alt="" />
 
             <p></p>
@@ -97,6 +112,7 @@
           <div>
             <h4>Pink Fairies</h4>
             <h5>R55</h5>
+            <a href="" class="btn">Buy Now</a>
             <img class="smallPic" src="/img/flow2.jpg" alt="" />
 
             <p></p>
@@ -104,6 +120,7 @@
           <div>
             <h4>Jumping Jacks</h4>
             <h5>R55</h5>
+            <a href="" class="btn">Buy Now</a>
             <img class="smallPic" src="/img/flo1.jpg" alt="" />
 
             <p></p>
@@ -115,13 +132,25 @@
         <h4>Always keen for new adventures</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum
-
-          <br />
-          <br />
           libero voluptatem impedit? Deleniti quaerat amet ea similique,
-
-          <img class="leafPic" src="/img/leaf.jpg" alt="" />
+          <br />
+          <br />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+          dignissimos, cum animi laboriosam autem dolorum iusto ipsum tenetur
+          soluta placeat. Atque placeat dolore recusandae itaque iusto enim,
+          quisquam odit possimus debitis nemo sed maiores quam eligendi rem
+          quidem, consequuntur veritatis eveniet officiis ipsum. Eum fugit dicta
+          expedita corporis quaerat quis?
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptatibus a consectetur reiciendis id animi repudiandae tenetur in!
+          Ducimus magni quos quae quis debitis perferendis ea iusto laudantium
+          nulla laboriosam vero doloremque minima corrupti rem adipisci cumque
+          porro ipsum, mollitia necessitatibus eum accusantium in dignissimos,
+          autem maiores? Animi, facilis a.
         </p>
+        <img class="leafPic" src="/img/leaf.jpg" alt="" />
       </div>
     </section>
 
@@ -132,9 +161,13 @@
         this.src = "/laraimg/potflwr.png";
       });
 
-      pot.addEventListener("mouseout", function () {
-        this.src = "/laraimg/potbare.png";
-      });
+      const reset = () => {
+        setInterval(() => {
+          pot.src = "/laraimg/potbare.png";
+        }, 7000);
+      };
+
+      document.onload = reset();
     </script>
   </body>
 </html>
