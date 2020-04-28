@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alex+Brush|Bad+Script|Baloo+2|Chela+One|Coiny|Delius+Unicase|Just+Me+Again+Down+Here|Kranky|Loved+by+the+King|Mr+Dafoe|Quicksand|Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/af356b6923.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>WildSprout | Essential Garden Products</title>
+  </head>
+  <body>
+    <header id="mainHeader">
+      <div id="potContainer">
+        <img src="/laraimg/potbare.png" id="pot" alt="" />
+      </div>
+      <div class="logoContainer">
+        <img id="logo" src="/laraimg/wildsproutleaf.png" alt="" />
+      </div>
+
+      <div id="mainNav">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about">
+      <h1 class="sectionTitle">ABOUT US</h1>
+
+      <div class="container">
+        <div class="about-a">
+          <img src="/img/flowss.jpg" alt="" />
+          <h4>We just love floweriboys so very much...</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            laborum ea quo architecto, laboriosam
+            <br />
+            <br />
+            libero voluptatem impedit? Deleniti quaerat amet ea similique,
+            accusantium neque laborum id rerum eos quisquam! Cupiditate porro
+            expedita saepe nisi! Consequuntur, ipsa consectetur. Dicta, dolor
+            veritatis?
+            <br />
+            <br />
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+            commodi facilis natus aspernatur vel nulla fugiat? Nemo ratione
+            vitae, nulla, molestias autem modi omnis dolorem dignissimos quae
+            repellat rerum voluptatum!
+          </p>
+          <img class="leafPic" src="/img/leaf.jpg" alt="" />
+        </div>
+
+        <div class="about-b">
+          <div class="content"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div>
+        <h1 class="sectionTitle">PRODUCTS</h1>
+        <img src="/laraimg/mushrmnobask.png" alt="" id="shroom" />
+      </div>
+
+      <div class="products-a">
+        <div class="content">
+          <div>
+            <h4>Garden Beauties</h4>
+            <h5>R55</h5>
+            <img class="smallPic" src="/img/flow4.jpg" alt="" />
+
+            <p></p>
+          </div>
+          <div>
+            <h4>Summer Sockers</h4>
+            <h5>R55</h5>
+            <img class="smallPic" src="/img/flow5.jpg" alt="" />
+
+            <p></p>
+          </div>
+          <div>
+            <h4>Pink Fairies</h4>
+            <h5>R55</h5>
+            <img class="smallPic" src="/img/flow2.jpg" alt="" />
+
+            <p></p>
+          </div>
+          <div>
+            <h4>Jumping Jacks</h4>
+            <h5>R55</h5>
+            <img class="smallPic" src="/img/flo1.jpg" alt="" />
+
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="products-b">
+        <img src="/img/look.jpg" alt="" />
+        <h4>Always keen for new adventures</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum
+
+          <br />
+          <br />
+          libero voluptatem impedit? Deleniti quaerat amet ea similique,
+
+          <img class="leafPic" src="/img/leaf.jpg" alt="" />
+        </p>
+      </div>
+    </section>
+
+    <script>
+      let pot = document.getElementById("pot");
+
+      pot.addEventListener("mouseover", function () {
+        this.src = "/laraimg/potflwr.png";
+      });
+
+      pot.addEventListener("mouseout", function () {
+        this.src = "/laraimg/potbare.png";
+      });
+    </script>
+  </body>
+</html>
