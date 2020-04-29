@@ -16,14 +16,15 @@
 }
 
 body {
-  background: linear-gradient(#ccf6cc, white);
+  width: 1000px;
+  background: linear-gradient(#d2f8d2, white);
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(56, 56, 56);
   width: 100%;
 }
 #potContainer {
   @include flexCenter();
-  transition: all 1s;
+  transition: all 1s ease-in;
   justify-content: flex-end;
   height: 100px;
   z-index: 5;
@@ -34,14 +35,17 @@ body {
   transform: scale(2);
 }
 
+.bigger {
+  height: 200px !important;
+}
+
 #pot {
   margin-top: 10rem;
-  height: 120px;
 }
 
 $primaryColor: #06623b;
 $secondColor: #ebebeb;
-$thirdColor: #ccf6cc;
+$thirdColor: #bcf3bc;
 $fourthColor: #3ec300;
 
 .smallPic {
@@ -67,7 +71,6 @@ $fourthColor: #3ec300;
   justify-content: center;
   align-items: center;
   padding: 6rem;
-
   width: 100%;
   font-family: "bad script";
   height: 250px;
@@ -77,14 +80,12 @@ $fourthColor: #3ec300;
 
 #mainNav ul {
   @include flexCenter();
-
   padding: 1rem;
 }
 
 #mainNav ul li {
   @include flexCenter();
   padding: 0 5rem;
-
   height: 300px;
   width: 500px;
   list-style: none;
@@ -93,14 +94,12 @@ $fourthColor: #3ec300;
 
 #mainNav ul li:hover {
   background: url(/laraimg/leaf.png) no-repeat center center/cover;
-
   padding-top: 2rem;
 }
 
 #mainNav ul li a {
   @include flexCenter();
   padding: 0 rem;
-
   list-style: none;
   text-decoration: none;
   color: black;
@@ -260,12 +259,90 @@ $fourthColor: #3ec300;
   }
 }
 
+#contactSection {
+  background: linear-gradient(white, #ccf6cc);
+  @include flexCenter();
+  flex-direction: column;
+
+  .contact-a {
+    img {
+      border: 1px solid $fourthColor;
+    }
+  }
+
+  .contact-b {
+    width: 500px;
+  }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 100px;
+    }
+    input:focus {
+      outline-color: $fourthColor;
+    }
+  }
+}
+
+.contact-c {
+  background: #ccf6cc;
+  @include flexCenter();
+  @include textCenter();
+
+  padding: 2rem;
+  div {
+    background: url(/laraimg/leafcircleframe.png) no-repeat center center/cover;
+    width: 100%;
+    margin: 20px 200px;
+
+    padding: 2rem;
+
+    p {
+      font-size: 30px;
+      padding: 3rem;
+    }
+    i {
+      padding: 1rem;
+      color: $fourthColor;
+    }
+  }
+}
+
+// footer
+
+#mainFooter {
+  @include flexCenter();
+  flex-direction: column;
+  color: white;
+  height: 300px;
+  background-color: #333;
+  img {
+    width: 300px;
+    height: 200px;
+    padding: 2rem;
+  }
+}
+
 //utilities
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
   display: grid;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#readmore {
+  display: none;
 }
 
 .subscribeBox {
@@ -277,6 +354,7 @@ $fourthColor: #3ec300;
   color: white;
   margin-left: 20%;
   h4 {
+    color: yellow;
     background: $primaryColor;
     height: 50px;
     border-radius: 10px;
@@ -315,6 +393,8 @@ $fourthColor: #3ec300;
 .btn:hover {
   color: $fourthColor;
   background: #333;
+  cursor: pointer;
+  border: 1px solid $fourthColor;
 }
 
 .sectionTitle {
@@ -333,4 +413,47 @@ $fourthColor: #3ec300;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
+}
+
+// tablets
+@media (max-width: 800px) {
+  #mainHeader {
+    width: 800px !important;
+  }
+  #logoContainer {
+    width: 500px !important;
+  }
+  #logo {
+    width: 500px !important;
+    margin-right: 200px;
+    height: 300px;
+  }
+  #potContainer {
+    width: 500px !important;
+    margin-right: 200px;
+    height: 300px;
+  }
+  #pot {
+    width: 100px !important;
+    margin-right: 220px;
+    height: 100px;
+  }
+
+  #mainNav {
+    margin-right: 200px;
+    margin-top: 400px;
+  }
+
+  #mainNav nav ul {
+    @include flexCenter();
+    flex-direction: column;
+  }
+
+  #about {
+    margin-top: 21rem;
+  }
+}
+
+//mobile
+@media (max-width: 400px) {
 }

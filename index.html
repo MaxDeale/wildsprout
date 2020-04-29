@@ -41,7 +41,8 @@
     </header>
 
     <section id="about">
-      <h1 class="sectionTitle bottomLine">ABOUT US</h1>
+      <h1 class="sectionTitle bottomLine"> ABOUT US</h1>
+     
 
       <div class="container">
         <div class="about-a">
@@ -86,7 +87,7 @@
           <div class="formControl">
             <input type="text" name="name" placeholder="Enter Your Name" />
             <input type="email" name="email" placeholder="Enter Your Email" />
-            <a href="" class="btn subscribeBtn">Subscribe</a>
+            <a href="" class="btn subscribeBtn">Subscribe <i  class="fab fa-envira "></i></a>
           </div>
         </div>
       </div>
@@ -96,7 +97,7 @@
           <div>
             <h4>Garden Beauties</h4>
             <h5>R55</h5>
-            <a href="" class="btn">Buy Now</a>
+            <a href="" onclick="buyalert()" class="btn buyBtn">Buy Now <i class="fas fa-money-bill-wave"></i></a>
             <img class="smallPic" src="/img/flow4.jpg" alt="" />
 
             <p></p>
@@ -104,7 +105,7 @@
           <div>
             <h4>Summer Sockers</h4>
             <h5>R55</h5>
-            <a href="" class="btn">Buy Now</a>
+            <a href="" onclick="buyalert()" class="btn buyBtn">Buy Now <i class="fas fa-money-bill-wave"></i></a>
             <img class="smallPic" src="/img/flow5.jpg" alt="" />
 
             <p></p>
@@ -112,7 +113,7 @@
           <div>
             <h4>Pink Fairies</h4>
             <h5>R55</h5>
-            <a href="" class="btn">Buy Now</a>
+            <a href=""  onclick="buyalert()" class="btn buyBtn">Buy Now <i class="fas fa-money-bill-wave"></i></a>
             <img class="smallPic" src="/img/flow2.jpg" alt="" />
 
             <p></p>
@@ -120,7 +121,7 @@
           <div>
             <h4>Jumping Jacks</h4>
             <h5>R55</h5>
-            <a href="" class="btn">Buy Now</a>
+            <a href="" onclick="buyalert()" class="btn buyBtn">Buy Now <i class="fas fa-money-bill-wave"></i></a>
             <img class="smallPic" src="/img/flo1.jpg" alt="" />
 
             <p></p>
@@ -129,45 +130,151 @@
       </div>
       <div class="products-b">
         <img src="/img/look.jpg" alt="" />
+    
         <h4>Always keen for new adventures</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum
-          libero voluptatem impedit? Deleniti quaerat amet ea similique,
-          <br />
-          <br />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
-          dignissimos, cum animi laboriosam autem dolorum iusto ipsum tenetur
-          soluta placeat. Atque placeat dolore recusandae itaque iusto enim,
-          quisquam odit possimus debitis nemo sed maiores quam eligendi rem
-          quidem, consequuntur veritatis eveniet officiis ipsum. Eum fugit dicta
-          expedita corporis quaerat quis?
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          voluptatibus a consectetur reiciendis id animi repudiandae tenetur in!
-          Ducimus magni quos quae quis debitis perferendis ea iusto laudantium
-          nulla laboriosam vero doloremque minima corrupti rem adipisci cumque
-          porro ipsum, mollitia necessitatibus eum accusantium in dignissimos,
-          autem maiores? Animi, facilis a.
+        <p id = "read" >
+         Do you want to find out more about flowers?
+          <a class="btn " onclick="readMore()" id = "readmoreBtn">Read More <i class="fas fa-glasses"></i></a>
+<p id = "readmore">
+  To most humans, flowers are seen as objects to decorate homes, gardens, bodies, and more. However, flowers have a much more important purpose than decorating. Flowers are the part of plants that make seeds which in turn make new plants. In order to make a seed, pollen from one flower has to combine with the eggs from another flower; this is called pollination. Flowers are highly adapted to attract their specific pollinators such as bees, flies, moths, hummingbirds, and bats just to name a few. This is why flowers are brightly colored and highly scented making them the beautiful creations that they are. The facts about flowers are that without them, we would not have food, medicines, dyes, textiles, and other necessities of daily living. There are so many interesting facts about flowers!
+<br>
+  How Flowers Eat and Grow--Photosynthesis
+  <br>
+  <br>
+  Some facts about flowers are that flowers get their food from sunlight, water, and minerals in the soil; flowers are the reproductive parts of a plant, and plants make their own food by photosynthesis.
+  <br>
+  <br>
+  <br>
+  Plants can photosynthesize due to cells called chloroplasts that contain chlorophyll; this is what makes plants green. Sun strikes the chloroplasts and combines with carbon dioxide that plants get from their leaves, and water that plants get through their roots, to produce sugar, or glucose. This is the plant's food, and this gives the plant energy to grow and produce flowers.
+  <br>
+  <br>
+  <br>
+  Plants take in carbon dioxide, or CO 2 ,through little holes in their leaves, which are called stomata. They then produce and release oxygen through the stomata. Plants and animals were meant to live together! Animals need the oxygen that plants put out, and plants need the carbon dioxide that animals put out.
+  <br>
+  <br>
+
+  Sometimes people add fertilizer, or plant food, to give plants extra minerals and nutrients so that they can grow better. Fertilizer does not take the place of sunlight and water.
+  <br>
+
+  Without sunlight and water, plants will die.
+</p>
+
+
         </p>
         <img class="leafPic" src="/img/leaf.jpg" alt="" />
       </div>
     </section>
 
+    <!-- contact -->
+    <section id="contactSection">
+      <h1 class = "sectionTitle bottomLine">Contact Us</h1>
+
+      <div class="contact-a">
+         <img src="/img/walk.jpg" alt="">
+      </div>
+      <div class="contact-b">
+      
+     
+         <form id ="contactForm" action="">
+          
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <input type="text" placeholder="Enter your number">
+
+           <a href="#home" style="width:100%" class="btn">Submit <i class="fas fa-envelope-open"></i></a>
+        
+           
+         </form>
+       </div>
+ 
+    </section>
+
+    <div class="contact-c">
+      <div>
+        <i class="fas fa-user fa-5x"></i>
+        <p  class = "bottomLine">24 Walloby Lane</p>
+      </div>
+      <div>
+       <i class="fas fa-phone fa-5x"></i>
+       <p class = "bottomLine">079-444-2333</p>
+     </div>
+     <div>
+       <i class="fas fa-envelope fa-5x"></i>
+       <p class = "bottomLine">info@WildSprout.com</p>
+     </div>
+    </div>
+    <p>  </p>
+   </div>
+
+   <footer id = "mainFooter">
+       
+    <img src="/laraimg/wildsproutleaf.png" alt="">
+    <p>Copyright &copy; 2020 Wildsprout ltd. </p>
+    <p>All Rights Reserved.</p>
+   </footer>
+
     <script>
+      let potContainer = document.getElementById("potContainer");
       let pot = document.getElementById("pot");
 
       pot.addEventListener("mouseover", function () {
         this.src = "/laraimg/potflwr.png";
+        potContainer.classList.add("bigger");
+        pot.classList.add("bigger");
       });
 
       const reset = () => {
         setInterval(() => {
           pot.src = "/laraimg/potbare.png";
-        }, 7000);
+        }, 20000);
       };
 
+
+      const readMore=()=>{
+        let readBtn = document.getElementById("readmoreBtn");
+      let para = document.getElementById("readmore");
+
+       readBtn.addEventListener("click",()=>{
+          para.style.display="block";
+          readBtn.style.display = "none";
+          document.getElementById("read").style.display="none";
+         
+       });
+      }
+
+
       document.onload = reset();
+
+      const buyalert=()=>{
+        alert("Item added to cart.");
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1000, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
     </script>
   </body>
 </html>
